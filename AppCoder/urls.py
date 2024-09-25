@@ -16,14 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from AppCoder import views
+from .views import *
 
 urlpatterns = [
-    path('inicio/', views.inicio),
-    path('trabajo/', views.trabajo),
-    path('trabajador/', views.trabajador),
-    path('empleador/', views.empleador),
-    path('crear_trabajo/', views.crear_trabajo),
-    path('crear_trabajador/', views.crear_trabajador),
-    path('crear_empleador/', views.crear_empleador),
+    path('', views.inicio),
+    path('trabajo/', views.trabajo, name='trabajo'),
+    path('trabajador/', views.trabajador, name='trabajador'),
+    path('empleador/', views.empleador, name='empleador'),
+    path('crear_trabajo/', views.crear_trabajo, name='crear_trabajo'),
+    path('crear_trabajador/', views.crear_trabajador, name='crear_trabajador'),
+    path('crear_empleador/', views.crear_empleador, name='crear_empleador'),
 ]
 
