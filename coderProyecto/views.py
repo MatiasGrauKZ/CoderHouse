@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.template import Template , Context, loader
 from AppCoder.models import Trabajo, Trabajador, Empleador
+from django.shortcuts import render
+
 
 
 def trabajo(request, nombre):

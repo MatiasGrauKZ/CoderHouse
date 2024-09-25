@@ -19,7 +19,7 @@ from AppCoder import views
 from .views import *
 
 urlpatterns = [
-    path('', views.inicio),
+    path('', views.inicio, name= 'inicio'),
     path('inicio_sesion', views.inicio_sesion, name='inicio_sesion'),
     path('trabajo/', views.trabajo, name='trabajo'),
     path('trabajador/', views.trabajador, name='trabajador'),

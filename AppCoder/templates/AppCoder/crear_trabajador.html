@@ -2,7 +2,7 @@
         {%load static%}
     {%block contenidoQueCambia%}
 
-    <form action="{% url 'crear_trabajador' %}" method="post">
+    <form action="{% url 'crear_trabajador' %}" method="post"> {% csrf_token %}
 
 <p>Trabajador nombre: <input type="text" name="nombre"></p>
 <p>Trabajador apellido: <input type="text" name="apellido"></p>

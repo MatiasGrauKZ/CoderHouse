@@ -4,7 +4,7 @@ from .models import Empleador
 from .forms import *
 
 def inicio(request):
-    return render(request, "inicio.html", {} )
+    return render(request, "inicio.html", {})
 
 def trabajo(request):
     return render(request, "trabajo.html", {} )
@@ -43,5 +43,7 @@ def crear_trabajador(request):
 
 def crear_empleador(request):
     return render(request, "crear_empleador.html",{})
+
+
 
 
