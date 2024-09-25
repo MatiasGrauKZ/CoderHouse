@@ -55,7 +55,7 @@ ROOT_URLCONF = 'coderProyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [f'{BASE_DIR}/coderProyecto/templates/'],
+        'DIRS': [f'{BASE_DIR}/AppCoder/templates/AppCoder'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
