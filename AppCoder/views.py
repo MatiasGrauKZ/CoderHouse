@@ -15,6 +15,13 @@ def empleador(request):
     return render(request, "empleador.html", {} )
 
 
+def crear_trabajo(request):
+    return render(request, "crear_trabajo.html",{})
 
+def crear_trabajador(request):
+    return render(request, "crear_trabajador.html",{})
+
+def crear_empleador(request):
+    return render(request, "crear_empleador.html",{})
 
 

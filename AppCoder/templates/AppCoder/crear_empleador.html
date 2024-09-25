@@ -1,0 +1,17 @@
+{% extends "AppCoder/padre.html"%}
+        {%load static%}
+    {%block contenidoQueCambia%}
+
+    <form action="{% url 'crearEmpleador'%}" method="post">
+
+<p>Empleador nombre: <input type="text" name="trabajo"></p>
+<p>Empleador apellido: <input type="text" name="trabajo"></p>
+<p>Empleador email: <input type="text" name="trabajo"></p>
+
+<button type="submit">Confirmar</button>
+
+    </form>
+ 
+    
+   
+    {%endblock%}

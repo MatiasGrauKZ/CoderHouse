@@ -13,4 +13,4 @@ class Empleador(models.Model):
     nombre=models.CharField(max_length=40)
     apellido=models.CharField(max_length=40)
     email=models.EmailField()
-    ProfesionABuscar=models.CharField(max_length=40)
+    

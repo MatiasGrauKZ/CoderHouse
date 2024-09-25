@@ -22,5 +22,8 @@ urlpatterns = [
     path('trabajo/', views.trabajo),
     path('trabajador/', views.trabajador),
     path('empleador/', views.empleador),
+    path('crear_trabajo/', views.crear_trabajo, name='crearTrabajo'),
+    path('crear_trabajador/', views.crear_trabajador,name='crearTrabajador'),
+    path('crear_empleador/', views.crear_empleador,name='crearEmpleador'),
 ]
 

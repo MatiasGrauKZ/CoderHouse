@@ -1,0 +1,13 @@
+{% extends "AppCoder/padre.html"%}
+        {%load static%}
+    {%block contenidoQueCambia%}
+
+    <form action="{% url 'crearTrabajo'%}" method="post">
+
+<p>Trabajo: <input type="text" name="trabajo"></p>
+
+    </form>
+    <button type="submit">Confirmar</button>
+    
+   
+    {%endblock%}
