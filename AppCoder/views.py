@@ -14,6 +14,8 @@ def trabajador(request):
 def empleador(request):
     return render(request, "empleador.html", {} )
 
+def inicio_sesion(request,):
+    return render(request, "inicio_sesion.html", {} )
 
 def crear_trabajo(request):
     print(request)

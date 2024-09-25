@@ -20,6 +20,7 @@ from .views import *
 
 urlpatterns = [
     path('', views.inicio),
+    path('inicio_sesion', views.inicio_sesion, name='inicio_sesion'),
     path('trabajo/', views.trabajo, name='trabajo'),
     path('trabajador/', views.trabajador, name='trabajador'),
     path('empleador/', views.empleador, name='empleador'),
