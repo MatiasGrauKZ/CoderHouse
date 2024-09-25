@@ -11,7 +11,7 @@ def trabajo(request, nombre):
 def trabajador(request,nombre,apellido,email):
     nuevo_trabajador= Trabajo(nombre=nombre, apellido= apellido, email= email)
     nuevo_trabajador.save()
-    return HttpResponse("""<p> Trabajor: {nuevo_trabajador.nombre}' creado con exito!<p>""")
+    return HttpResponse("""<p> Trabajador: {nuevo_trabajador.nombre}' creado con exito!<p>""")
     
 
 def empleador(request,nombre,apellido,email):
