@@ -16,6 +16,8 @@ def empleador(request):
 
 
 def crear_trabajo(request):
+    print(request)
+    print('se ejecuto correctamente')
     return render(request, "crear_trabajo.html",{})
 
 def crear_trabajador(request):
